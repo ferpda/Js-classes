@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+}
+body p{
+    width: 50%;
+    height: auto;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+body h1{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+body label{
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+body label[for="red"]{
+    color: red;
+}
+body label[for="green"]{
+    color: green;
+}
+body label[for="blue"]{
+    color: blue;
+}
+body input[type="range"]{
+   appearance: none;
+   height: .1rem;
+   /* width: 1rem; */
+   width: 15%;
+   transition: all .3s ease;
+}
+body input[type="range"]#red:hover{
+    background-color: rgba(255, 0, 0, 0.706);
+    transition: all .3s ease;
+}
+body input[type="range"]#blue:hover{
+    background-color: blue;
+    transition: all .3s ease;
+}
+body input[type="range"]#green:hover{
+    background-color: green;
+    transition: all .3s ease;
+}
+body input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: rgb(255, 255, 255);
+    width: 7px;
+    height: 20px;
+    transition: all .3s ease;
+    border: 0.5px solid white;
+}
+body input[type="range"]::-webkit-slider-thumb:hover{
+    border: 0.5px solid black;
+}
